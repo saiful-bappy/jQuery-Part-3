@@ -234,8 +234,8 @@ section {
   background: red;
   position: fixed;
   left: 45%;
-  top: 60%;
-  transform: translate(-45%, -60%);
+  top: 85%;
+  transform: translate(-45%, -85%);
 }
 
 .heightBox {
@@ -245,8 +245,8 @@ section {
   position: fixed;
   z-index: 2;
   left: 50%;
-  top: 70%;
-  transform: translate(-50%, -70%);
+  top: 100%;
+  transform: translate(-50%, -100%);
 }
 
 @media screen and (max-width: 992px) {
