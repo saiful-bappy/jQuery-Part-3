@@ -215,6 +215,10 @@ body {
     background: none !important;
     color: khaki !important;
   }
+
+  .content {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 767px) {
