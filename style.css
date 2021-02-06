@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: #34495e;
+}
+
+.header-area {
+  background: #34495e;
+}
+
+.header-top {
+  height: 100px;
+  background: url(images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.bar {
+  display: none;
+  background: #e74c3c;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.bar i {
+  float: right;
+}
+
+.menu-bar ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-bar ul li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  opacity: 0.9;
+}
+
+.menu-bar ul li a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-bar > ul > li:hover a {
+  background: #ff4757;
+}
+
+.sub-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px;
+}
+
+.sub-content ul {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+.sub-content ul li {
+  display: block;
+  list-style: none;
+  text-align: left;
+}
+
+.sub-content ul li a {
+  display: block;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.sub-content ul li:hover a {
+  background: #0be881;
+}
+
+.content:last-child .sub-content {
+  right: 0;
+}
+
+.content:hover .sub-content {
+  display: block;
+}
+
+.sub-content .sub-content-sub {
+  display: none;
+  box-shadow: 0 8px 16px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.sub-content-sub ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-content-sub ul li {
+  display: block;
+  list-style: none;
+  text-align: left;
+}
+
+.sub-content-sub ul li a {
+  display: block;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.sub-content-sub ul li a:hover {
+  background: #e74c3c;
+}
+
+.content:hover > .sub-content-sub {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-bar .bar {
+    display: block;
+  }
+
+  .menu-bar ul {
+    display: none;
+    padding-bottom: 20px;
+  }
+
+  .menu-bar ul li {
+    display: block;
+    text-align: left;
+  }
+
+  .menu-bar ul li a {
+    display: block;
+  }
+
+  .menu-bar ul .active a {
+    font-size: 28px;
+  }
+
+  .menu-bar > ul > li:hover a {
+    background: none;
+  }
+
+  .sub-content {
+    display: block;
+    width: 40%;
+    position: initial;
+    margin-left: 40px;
+  }
+
+  .sub-content ul {
+    width: 100%;
+  }
+
+  .sub-content ul li a {
+    color: khaki;
+  }
+
+  .sub-content ul li:hover a {
+    background: #0be881;
+    color: black;
+  }
+
+  .sub-content > ul > .faculties:hover a {
+    background: none;
+  }
+
+  .sub-content .sub-content-sub {
+    display: block;
+    width: 80%;
+    background: white;
+    position: initial;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px;
+  }
+
+  .sub-content .sub-content-sub a {
+    color: black !important;
+  }
+
+  .sub-content .sub-content-sub ul li:hover a {
+    background: #e74c3c;
+    color: khaki !important;
+  }
+
+  .sub-content:hover .faculties > a {
+    background: none !important;
+    color: khaki !important;
+  }
+}
+
+section {
+  background-color: rgba(52, 73, 94, 0.8);
+  overflow: hidden;
+}
+
+.dummy-text {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.widthBox {
+  height: 200px;
+  width: 200px;
+  background: red;
+  position: fixed;
+  left: 45%;
+  top: 60%;
+  transform: translate(-45%, -60%);
+}
+
+.heightBox {
+  height: 200px;
+  width: 200px;
+  background: yellow;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -70%);
+}
+
+@media screen and (max-width: 992px) {
+  .widthBox {
+    left: 80%;
+    top: 50%;
+    transform: translate(-80%, -50%);
+  }
+
+  .heightBox {
+    z-index: 2;
+    left: 90%;
+    top: 60%;
+    transform: translate(-90%, -60%);
+  }
+}
+
+.scrollToTop {
+  display: none;
+}
+
+.scrollToTop a {
+  color: white;
+  background: orangered;
+  font-size: 22px;
+  padding: 10px 15px;
+  position: fixed;
+  right: 15px;
+  bottom: 0;
+  text-decoration: none;
+}
