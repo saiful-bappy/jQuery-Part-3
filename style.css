@@ -171,7 +171,6 @@ body {
 
   .sub-content {
     display: block;
-    width: 40%;
     position: initial;
     margin-left: 40px;
   }
@@ -215,6 +214,12 @@ body {
   .sub-content:hover .faculties > a {
     background: none !important;
     color: khaki !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    width: 90%;
   }
 }
 
